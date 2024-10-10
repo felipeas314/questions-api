@@ -31,7 +31,6 @@ describe('-------------------- Room Repository --------------------', () => {
     test('Criar Sala 22222', async () => {
         const uuid = uuidv4();
         let x = await roomRepository.create({
-            id: uuid,
             name:'teste 11111',
             description:'testando'
         })

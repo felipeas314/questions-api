@@ -22,8 +22,10 @@ describe('-------------------- Heath Controller --------------------', () => {
     test('Espera resultado OK', async () => {
         const uuid = uuidv4();
        
-
-      
+        const room = await createRoomController.handle({
+            "name":"Teste Surpresa de Matematica",
+            "description":"Fazer o teste legal"
+        })
 
         expect(1).toBe(1)
     })

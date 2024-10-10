@@ -1,13 +1,13 @@
 {
-  "name": "perguntas-e-respostas",
+  "name": "questions-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "init.ts",
   "scripts": {
     "dev": "tsx watch src/app/init.ts",
     "test": "jest --detectOpenHandles"
   },
   "keywords": [],
-  "author": "",
+  "author": "Felipe Alexandre da Silva",
   "license": "ISC",
   "description": "",
   "devDependencies": {
