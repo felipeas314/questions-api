@@ -1,5 +1,5 @@
-import DataSourceMongoDb from "../config/mongo-datasource-config";
-import { RoomRepository } from "../repository/room-repository";
+import DataSourceMongoDb from "../../config/mongo-datasource-config";
+import { RoomRepository } from "../../repository/room-repository";
 
 export class RoomRepositoryFactory {
     

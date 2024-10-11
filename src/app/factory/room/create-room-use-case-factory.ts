@@ -1,6 +1,6 @@
-import DataSourceMongoDb from "../config/mongo-datasource-config";
-import { RoomRepository } from "../repository/room-repository";
-import { CreateRoomUseCase } from "../usecase/create-room-use-case";
+import DataSourceMongoDb from "../../config/mongo-datasource-config";
+import { RoomRepository } from "../../repository/room-repository";
+import { CreateRoomUseCase } from "../../usecase/create-room-use-case";
 import { RoomRepositoryFactory } from "./room-repository-factory";
 
 export class CreateRoomUseCaseFactory {

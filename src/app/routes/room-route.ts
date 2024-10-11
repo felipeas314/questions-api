@@ -2,7 +2,7 @@ import { Request, Response, Router } from "express";
 const { v4: uuidv4 } = require("uuid");
 
 import { CreateRoomController } from "../controllers/create-room-controller";
-import { CreateRoomControllerFactory } from "../factory/room-controller-factory";
+import { CreateRoomControllerFactory } from "../factory/room/room-controller-factory";
 
 export default (router: Router): void => {
 

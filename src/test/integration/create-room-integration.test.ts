@@ -1,14 +1,10 @@
 const { v4: uuidv4 } = require("uuid");
 
 import DataSourceMongoDb from '../../app/config/mongo-datasource-config';
-// Generate a UUID v4
-
-
-
 import AppDataSource from '../../app/config/mongo-datasource-config';
 import { CreateRoomController } from '../../app/controllers/create-room-controller';
 import { CreateRoomDTO } from '../../app/dto/create-room-dto';
-import { CreateRoomControllerFactory } from '../../app/factory/room-controller-factory';
+import { CreateRoomControllerFactory } from '../../app/factory/room/room-controller-factory';
 
 let createRoomController: CreateRoomController;
 

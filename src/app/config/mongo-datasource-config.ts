@@ -1,6 +1,7 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { Room } from "../entity/room-entity";
+import { Question } from "../entity/question-entity";
 
 export default class DataSourceMongoDb {
   private static dataSource: DataSource;
@@ -16,7 +17,7 @@ export default class DataSourceMongoDb {
         useUnifiedTopology: true,
         useNewUrlParser: true,
         logging: true,
-        entities: [Room],
+        entities: [Room,Question],
         migrations: [],
         subscribers: [],
       });

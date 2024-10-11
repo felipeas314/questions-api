@@ -1,5 +1,8 @@
 import "reflect-metadata"
 import { Entity, ObjectId, ObjectIdColumn, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Category } from "./category-enum";
+
+
 
 @Entity('question')
 export class Question {
@@ -10,15 +13,13 @@ export class Question {
   @Column('text', { nullable: false })
   text: string;
 
-  @Column('text', { nullable: false })
-  category: string;
+  @Column('enum', { enum: Category })
+  category: Category;
 
-  @Column('text', { nullable: false })
-  subCategory: string;
-
-  constructor(id: ObjectId, text: string) {
+  constructor(id: ObjectId, text: string, category: Category) {
     this.id = id;
     this.text = text;
+    this.category = category;
   }
   
 }

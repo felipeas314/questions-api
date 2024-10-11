@@ -1,4 +1,4 @@
-import { CreateRoomController } from "../controllers/create-room-controller";
+import { CreateRoomController } from "../../controllers/create-room-controller";
 import { CreateRoomUseCaseFactory } from "./create-room-use-case-factory";
 
 export class CreateRoomControllerFactory {
